@@ -235,3 +235,5 @@ function getQuery(){
       }
     return args;
 }
+// js类型判断函数。
+const type = (obj) => (({}).toString.call(obj).match(/\[object\ (\w+)\]/)[1]).toLowerCase()
